@@ -81,12 +81,12 @@ func (options *Options) FromMap(m map[string]interface{}) *Options {
 		options.DisableAudioConversion = defaults.options.disableAudioConversion
 	}
 
-	switch v := m["disableDuplicateDetection"].(type) {
-	case bool:
-		options.DisableDuplicateDetection = v
-	default:
-		options.DisableDuplicateDetection = defaults.options.disableDuplicateDetection
-	}
+	//switch v := m["disableDuplicateDetection"].(type) {
+	//case bool:
+		options.DisableDuplicateDetection = true
+	//default:
+	//	options.DisableDuplicateDetection = defaults.options.disableDuplicateDetection
+	//}
 
 	switch v := m["duplicateDetectionTimeFrame"].(type) {
 	case float64:

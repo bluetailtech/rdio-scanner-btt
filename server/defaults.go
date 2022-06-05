@@ -96,7 +96,7 @@ var defaults Defaults = Defaults{
 		autoPopulate:                true,
 		dimmerDelay:                 5000,
 		disableAudioConversion:      false,
-		disableDuplicateDetection:   false,
+		disableDuplicateDetection:   true,
 		duplicateDetectionTimeFrame: 500,
 		keypadBeeps:                 "uniden",
 		maxClients:                  200,
