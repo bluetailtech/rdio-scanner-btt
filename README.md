@@ -19,6 +19,7 @@ Here is a list of recorders known to work with [Rdio Scanner](https://github.com
 | [sdrtrunk](https://github.com/DSheirer/sdrtrunk)               |     | X        |
 | [voxcall](https://github.com/aaknitt/voxcall)                  | X   |          |
 | [ProScan](https://www.proscan.org/)                            |     | X        |
+| [P25RX/P25RX-II](https://www.bluetailtechnologies/)            |     | X        |
 
 # Quick start
 
