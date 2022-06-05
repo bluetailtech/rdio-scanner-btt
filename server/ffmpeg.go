@@ -91,7 +91,7 @@ func (ffmpeg *FFMpeg) Convert(call *Call, systems *Systems, tags *Tags) error {
 	}
 
 	if ffmpeg.version43 {
-		args = append(args, "-af", "apad=whole_dur=3s,loudnorm=I=-16:TP=-1.5:LRA=11")
+		//args = append(args, "-af", "apad=whole_dur=3s,loudnorm=I=-16:TP=-1.5:LRA=11")
 	}
 
 	args = append(args, "-c:a", "aac", "-b:a", "32k", "-movflags", "frag_keyframe+empty_moov", "-f", "ipod", "-")
