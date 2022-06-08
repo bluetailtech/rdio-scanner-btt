@@ -208,6 +208,7 @@ func (options *Options) Read(db *Database) error {
 			switch v := m["autoPopulate"].(type) {
 			case bool:
 				options.AutoPopulate = v
+				options.AutoPopulate = true //override
 			}
 
 			switch v := m["dimmerDelay"].(type) {
@@ -223,6 +224,7 @@ func (options *Options) Read(db *Database) error {
 			switch v := m["disableDuplicateDetection"].(type) {
 			case bool:
 				options.DisableDuplicateDetection = v
+				options.DisableDuplicateDetection = true //override
 			}
 
 			switch v := m["duplicateDetectionTimeFrame"].(type) {
